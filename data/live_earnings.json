@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "SEARCHING FOR NEXT VERIFIED GAIN",
+  "status": "1 TASK SUBMITTED — AWAITING VERIFICATION; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
   "last_verified_gain_at": null,
-  "updated_at": "2026-09-03T19:34:56Z",
+  "updated_at": "2026-09-03T19:36:00Z",
   "settled_cash_gbp": 0.00,
   "claimable_cash_gbp": 0.00,
   "redeemable_value_gbp": 0.00,
@@ -16,8 +16,19 @@
       "status": "accepted/queued evidence exists; not counted as cash or GBP value"
     }
   ],
+  "submitted_tasks": [
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/beacon-skill#921",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    }
+  ],
+  "submitted_task_count": 1,
   "verified_total_value_gbp": 0.00,
   "realised_cash_gbp": 0.00,
   "next_milestone_gbp": 0.01,
-  "note": "Only verified owned/redeemable value is counted. Advertised or speculative opportunities are excluded."
+  "note": "Only verified owned/redeemable value is counted. Submitted, advertised, pending, or speculative rewards are displayed separately and excluded from realised totals."
 }
