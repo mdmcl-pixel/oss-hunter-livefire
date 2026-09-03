@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "SEARCHING FOR NEXT VERIFIED GAIN",
+  "hunt_started_at": "2026-09-03T19:34:56Z",
+  "last_verified_gain_at": null,
+  "updated_at": "2026-09-03T19:34:56Z",
+  "settled_cash_gbp": 0.00,
+  "claimable_cash_gbp": 0.00,
+  "redeemable_value_gbp": 0.00,
+  "liquid_convertible_value_gbp": 0.00,
+  "pending_speculative_value_gbp": 0.00,
+  "unvalued_native_rewards": [
+    {
+      "asset": "RTC",
+      "amount": 17,
+      "status": "accepted/queued evidence exists; not counted as cash or GBP value"
+    }
+  ],
+  "verified_total_value_gbp": 0.00,
+  "realised_cash_gbp": 0.00,
+  "next_milestone_gbp": 0.01,
+  "note": "Only verified owned/redeemable value is counted. Advertised or speculative opportunities are excluded."
+}
