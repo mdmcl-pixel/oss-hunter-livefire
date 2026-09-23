@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "status": "13 REWARD UNITS SUBMITTED/RECONCILING — 49 RTC ADVERTISED PENDING; 19 RTC ACCEPTED/QUEUED; 40.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
+  "status": "14 REWARD UNITS SUBMITTED/RECONCILING — 64 RTC ADVERTISED PENDING; 19 RTC ACCEPTED/QUEUED; 40.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
   "last_verified_gain_at": "2026-09-19T20:12:07Z",
-  "updated_at": "2026-09-23T17:12:30Z",
+  "updated_at": "2026-09-23T17:18:00Z",
   "settled_cash_gbp": 0,
   "claimable_cash_gbp": 0,
   "redeemable_value_gbp": 0,
@@ -17,7 +17,7 @@
       "paid_or_sent_evidence_amount": 40.1,
       "accepted_or_queued_amount": 19,
       "claimable_amount": 0,
-      "advertised_or_pending_amount": 49,
+      "advertised_or_pending_amount": 64,
       "verified_wallet_balance_amount": null,
       "gbp_value": null,
       "valuation_status": "RustChain bounty FAQ states there is no off-ramp, DEX listing, or fiat conversion; native amounts only",
@@ -172,13 +172,21 @@
       "advertised_reward_amount": 3,
       "submission_route": "existing GitHub claim; reconciliation email sent 2026-09-23",
       "status": "historical submitted claim; current acceptance/payment state requested; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#16601",
+      "target": "mdmcl-pixel/oss-hunter-livefire/distribution/rustchain-dry-run-truthfulness-type-b",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 15,
+      "submission_route": "public GitHub Type B package + bounty-spec email submission route",
+      "status": "package completed and submitted; awaiting maintainer acceptance and slot verification; not earned or counted"
     }
   ],
-  "submitted_task_count": 13,
+  "submitted_task_count": 14,
   "submitted_advertised_native_reward": {
     "asset": "RTC",
-    "amount": 49,
-    "status": "requested/pending only; includes historical unresolved claims now under reconciliation; excluded from verified totals"
+    "amount": 64,
+    "status": "requested/pending only; includes historical unresolved claims under reconciliation; excluded from verified totals"
   },
   "invalid_or_blocked_submissions": [
     {
