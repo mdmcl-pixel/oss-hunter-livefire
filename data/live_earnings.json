@@ -1,14 +1,29 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "10 REWARD UNITS SUBMITTED — 34 RTC ADVERTISED PENDING; 5 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
   "last_verified_gain_at": "2026-09-19T00:02:14Z",
-  "updated_at": "2026-09-23T14:42:00Z",
+  "updated_at": "2026-09-23T15:22:00Z",
   "settled_cash_gbp": 0.00,
   "claimable_cash_gbp": 0.00,
   "redeemable_value_gbp": 0.00,
   "liquid_convertible_value_gbp": 0.00,
   "pending_speculative_value_gbp": 0.00,
+  "crypto_assets": [
+    {
+      "asset": "RTC",
+      "name": "RustChain",
+      "network": "RustChain",
+      "paid_or_sent_evidence_amount": 5,
+      "accepted_or_queued_amount": 17,
+      "claimable_amount": 0,
+      "advertised_or_pending_amount": 34,
+      "verified_wallet_balance_amount": null,
+      "gbp_value": null,
+      "valuation_status": "no independently verified current off-ramp/value; native amounts only",
+      "counted_in_realised_cash_gbp": false
+    }
+  ],
   "verified_native_payout_events": [
     {
       "asset": "RTC",
@@ -123,5 +138,5 @@
   "verified_total_value_gbp": 0.00,
   "realised_cash_gbp": 0.00,
   "next_milestone_gbp": 0.01,
-  "note": "Only verified settled/redeemable GBP value is counted in GBP totals. Native-token payout events and advertised/pending rewards are shown separately and are not converted to cash without a verified current off-ramp and reconciliation."
+  "note": "Fiat/cash totals and crypto/token assets are always separate. Each crypto asset is listed independently. Crypto is not converted to GBP or counted as realised cash unless a lawful current off-ramp, current independent valuation, and settlement evidence exist."
 }
