@@ -1,20 +1,20 @@
 {
   "schema_version": 2,
-  "status": "10 REWARD UNITS SUBMITTED — 34 RTC ADVERTISED PENDING; 5.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
+  "status": "10 REWARD UNITS SUBMITTED — 34 RTC ADVERTISED PENDING; 30.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
-  "last_verified_gain_at": "2026-09-23T00:00:00Z",
-  "updated_at": "2026-09-23T15:22:42Z",
-  "settled_cash_gbp": 0.00,
-  "claimable_cash_gbp": 0.00,
-  "redeemable_value_gbp": 0.00,
-  "liquid_convertible_value_gbp": 0.00,
-  "pending_speculative_value_gbp": 0.00,
+  "last_verified_gain_at": "2026-09-19T20:12:07Z",
+  "updated_at": "2026-09-23T17:12:00Z",
+  "settled_cash_gbp": 0,
+  "claimable_cash_gbp": 0,
+  "redeemable_value_gbp": 0,
+  "liquid_convertible_value_gbp": 0,
+  "pending_speculative_value_gbp": 0,
   "crypto_assets": [
     {
       "asset": "RTC",
       "name": "RustChain Token",
       "network": "RustChain",
-      "paid_or_sent_evidence_amount": 5.1,
+      "paid_or_sent_evidence_amount": 30.1,
       "accepted_or_queued_amount": 17,
       "claimable_amount": 0,
       "advertised_or_pending_amount": 34,
@@ -38,6 +38,20 @@
       "source": "Scottcjn/rustchain-bounties#16863",
       "status": "Maintainer states sent to @mdmcl-pixel as pending id 4678; confirms after 24h hold. Not settled GBP.",
       "evidence_time": "2026-09-23T00:00:00Z"
+    },
+    {
+      "asset": "RTC",
+      "amount": 5,
+      "source": "Scottcjn/Rustchain#8298",
+      "status": "Maintainer states merge auto-reward already paid as pending transfer 4161; not independently reconciled to wallet and not settled GBP.",
+      "evidence_time": "2026-09-19T20:12:07Z"
+    },
+    {
+      "asset": "RTC",
+      "amount": 20,
+      "source": "Scottcjn/rustchain-bounties#2819 top-up for Rustchain#8298",
+      "status": "Maintainer awarded 20 RTC top-up as pending transfer 4695 after grading #8298 Low (25 RTC total including 5 RTC merge reward); not independently reconciled to wallet and not settled GBP.",
+      "evidence_time": "2026-09-19T20:12:07Z"
     }
   ],
   "unvalued_native_rewards": [
@@ -48,24 +62,102 @@
     }
   ],
   "submitted_tasks": [
-    {"source":"Scottcjn/rustchain-bounties#520","target":"Scottcjn/Rustchain#8264","advertised_reward_asset":"RTC","advertised_reward_amount":3,"submission_route":"documented email fallback after GitHub integration 403","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#520","target":"Scottcjn/bottube#1985","advertised_reward_asset":"RTC","advertised_reward_amount":3,"submission_route":"documented email fallback after GitHub integration 403","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#520","target":"Scottcjn/bottube#1988","advertised_reward_asset":"RTC","advertised_reward_amount":3,"submission_route":"documented email fallback after GitHub integration 403","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#520","target":"Scottcjn/bottube#1990","advertised_reward_asset":"RTC","advertised_reward_amount":3,"submission_route":"documented email fallback after GitHub integration 403","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#254","target":"Scottcjn/Rustchain#8264","advertised_reward_asset":"RTC","advertised_reward_amount":1,"submission_route":"existing qualifying GitHub issue + documented email fallback for claim","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#254","target":"Scottcjn/bottube#1985","advertised_reward_asset":"RTC","advertised_reward_amount":1,"submission_route":"existing qualifying GitHub issue + documented email fallback for claim","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#254","target":"Scottcjn/bottube#1988","advertised_reward_asset":"RTC","advertised_reward_amount":1,"submission_route":"existing qualifying GitHub issue + documented email fallback for claim","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#254","target":"Scottcjn/bottube#1990","advertised_reward_asset":"RTC","advertised_reward_amount":1,"submission_route":"existing qualifying GitHub issue + documented email fallback for claim","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#1575","target":"Scottcjn/contributors#179","advertised_reward_asset":"RTC","advertised_reward_amount":3,"submission_route":"existing registration issue + documented email fallback","status":"submitted; awaiting maintainer verification; not earned or counted"},
-    {"source":"Scottcjn/rustchain-bounties#16601","target":"mdmcl-pixel/oss-hunter-livefire/distribution/rustchain-autopay-silent-success-short","advertised_reward_asset":"RTC","advertised_reward_amount":15,"submission_route":"public GitHub package + bounty-spec email submission route","status":"package completed and submitted; awaiting maintainer acceptance; not earned or counted"}
+    {
+      "source": "Scottcjn/rustchain-bounties#520",
+      "target": "Scottcjn/Rustchain#8264",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#520",
+      "target": "Scottcjn/bottube#1985",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#520",
+      "target": "Scottcjn/bottube#1988",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#520",
+      "target": "Scottcjn/bottube#1990",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/Rustchain#8264",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1985",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1988",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1990",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#1575",
+      "target": "Scottcjn/contributors#179",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "existing registration issue + documented email fallback",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#16601",
+      "target": "mdmcl-pixel/oss-hunter-livefire/distribution/rustchain-autopay-silent-success-short",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 15,
+      "submission_route": "public GitHub package + bounty-spec email submission route",
+      "status": "package completed and submitted; awaiting maintainer acceptance; not earned or counted"
+    }
   ],
   "submitted_task_count": 10,
-  "submitted_advertised_native_reward": {"asset":"RTC","amount":34,"status":"requested/pending only; excluded from verified totals"},
+  "submitted_advertised_native_reward": {
+    "asset": "RTC",
+    "amount": 34,
+    "status": "requested/pending only; excluded from verified totals"
+  },
   "invalid_or_blocked_submissions": [
-    {"source":"Scottcjn/rustchain-bounties#254","target":"Scottcjn/beacon-skill#921","status":"not counted: the paid deliverable must exist on a Scottcjn repository; the prior email-only attempted substitute does not qualify"}
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/beacon-skill#921",
+      "status": "not counted: the paid deliverable must exist on a Scottcjn repository; the prior email-only attempted substitute does not qualify"
+    }
   ],
-  "verified_total_value_gbp": 0.00,
-  "realised_cash_gbp": 0.00,
+  "verified_total_value_gbp": 0,
+  "realised_cash_gbp": 0,
   "next_milestone_gbp": 0.01,
   "note": "Fiat/cash totals and crypto/token assets are always separate. Each crypto asset is listed independently. RTC has no verified fiat off-ramp per the current bounty FAQ, so no RTC amount is converted to GBP or counted as realised cash."
 }
