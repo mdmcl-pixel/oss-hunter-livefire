@@ -1,0 +1,65 @@
+name: Build RustChain contributor guide Type A assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'distribution/rustchain-contributor-payout-guide-type-a/**.md'
+      - 'distribution/rustchain-contributor-payout-guide-type-a/**.txt'
+      - 'distribution/rustchain-contributor-payout-guide-type-a/build_assets.py'
+      - '.github/workflows/build-rustchain-contributor-guide-type-a.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-rustchain-contributor-guide-type-a
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install asset dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak
+          python -m pip install --disable-pip-version-check pillow
+      - name: Generate voiceover and visuals
+        working-directory: distribution/rustchain-contributor-payout-guide-type-a
+        run: python build_assets.py
+      - name: Verify generated package
+        working-directory: distribution/rustchain-contributor-payout-guide-type-a
+        run: |
+          test -f thumbnail.png
+          test -f thumbnail-alt-1.png
+          test -f thumbnail-alt-2.png
+          test "$(find voiceover -maxdepth 1 -name '*.wav' | wc -l)" -eq 7
+          test "$(find visuals -maxdepth 1 -name '*.png' | wc -l)" -eq 8
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          root=Path('.')
+          for p in [root/'thumbnail.png',root/'thumbnail-alt-1.png',root/'thumbnail-alt-2.png']:
+              assert Image.open(p).size==(1280,720), p
+          for p in sorted((root/'visuals').glob('*.png')):
+              assert Image.open(p).size==(1920,1080), p
+          print('TYPE_A_ASSET_QA_PASS')
+          PY
+      - name: Commit generated assets
+        run: |
+          git config user.name "daisyx-build-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add distribution/rustchain-contributor-payout-guide-type-a/voiceover/*.wav
+          git add distribution/rustchain-contributor-payout-guide-type-a/visuals/*.png
+          git add distribution/rustchain-contributor-payout-guide-type-a/thumbnail*.png
+          if git diff --cached --quiet; then
+            echo "Assets already current."
+            exit 0
+          fi
+          git commit -m "Build Type A voiceover and visual assets"
+          git pull --rebase origin main
+          git push origin main
