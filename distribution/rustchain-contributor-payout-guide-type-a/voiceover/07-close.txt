@@ -1,0 +1,1 @@
+If you want to contribute, start with the public CONTRIBUTING dot M D and an open issue, not with a giant speculative patch. Keep the change narrow, prove what you tested, use the right BCOS tier when required, and do not let wallet setup block the pull request. The fastest path is usually the most auditable one: small scope, real evidence, clear merge, clear payout.
