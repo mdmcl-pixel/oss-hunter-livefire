@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "status": "14 REWARD UNITS SUBMITTED/RECONCILING — 64 RTC ADVERTISED PENDING; 19 RTC ACCEPTED/QUEUED; 45.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
+  "status": "14 REWARD UNITS SUBMITTED/RECONCILING — 64 RTC ADVERTISED PENDING; 19 RTC ACCEPTED/QUEUED; 53.1 RTC PAYOUT-SENT EVIDENCE; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
   "last_verified_gain_at": "2026-09-19T20:12:07Z",
-  "updated_at": "2026-09-23T19:36:00Z",
+  "updated_at": "2026-09-23T19:41:00Z",
   "settled_cash_gbp": 0,
   "claimable_cash_gbp": 0,
   "redeemable_value_gbp": 0,
@@ -14,7 +14,7 @@
       "asset": "RTC",
       "name": "RustChain Token",
       "network": "RustChain",
-      "paid_or_sent_evidence_amount": 45.1,
+      "paid_or_sent_evidence_amount": 53.1,
       "accepted_or_queued_amount": 19,
       "claimable_amount": 0,
       "advertised_or_pending_amount": 64,
@@ -66,6 +66,20 @@
       "source": "Scottcjn/Rustchain#8324",
       "status": "GitHub reward bot states merged PR earned 5 RTC and was sent to mdmcl-pixel; wallet receipt has not been independently reconciled and this is not settled GBP.",
       "evidence_time": "2026-09-13T23:34:36Z"
+    },
+    {
+      "asset": "RTC",
+      "amount": 3,
+      "source": "Scottcjn/bottube#2272",
+      "status": "Maintainer states the automatic merge reward failed, then 3 RTC was paid manually as pending_id 4668 with a 24h hold; wallet receipt has not been independently reconciled and this is not settled GBP.",
+      "evidence_time": "2026-09-18T17:20:54Z"
+    },
+    {
+      "asset": "RTC",
+      "amount": 5,
+      "source": "Scottcjn/Rustchain#8287",
+      "status": "GitHub reward bot states merged PR earned 5 RTC and was sent to mdmcl-pixel; wallet receipt has not been independently reconciled and this is not settled GBP.",
+      "evidence_time": "2026-08-29T15:44:11Z"
     }
   ],
   "unvalued_native_rewards": [
