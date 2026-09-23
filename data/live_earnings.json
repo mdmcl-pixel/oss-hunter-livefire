@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "3 VALID CLAIMS SUBMITTED — AWAITING VERIFICATION; SEARCHING FOR NEXT VERIFIED GAIN",
+  "status": "8 REWARD UNITS SUBMITTED — 16 RTC ADVERTISED PENDING; SEARCHING FOR NEXT VERIFIED GAIN",
   "hunt_started_at": "2026-09-03T19:34:56Z",
   "last_verified_gain_at": null,
-  "updated_at": "2026-09-23T14:25:00Z",
+  "updated_at": "2026-09-23T14:33:00Z",
   "settled_cash_gbp": 0.00,
   "claimable_cash_gbp": 0.00,
   "redeemable_value_gbp": 0.00,
@@ -40,19 +40,59 @@
       "advertised_reward_amount": 3,
       "submission_route": "documented email fallback after GitHub integration 403",
       "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#520",
+      "target": "Scottcjn/bottube#1990",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 3,
+      "submission_route": "documented email fallback after GitHub integration 403",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/Rustchain#8264",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1985",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1988",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
+    },
+    {
+      "source": "Scottcjn/rustchain-bounties#254",
+      "target": "Scottcjn/bottube#1990",
+      "advertised_reward_asset": "RTC",
+      "advertised_reward_amount": 1,
+      "submission_route": "existing qualifying GitHub issue + documented email fallback for claim",
+      "status": "submitted; awaiting maintainer verification; not earned or counted"
     }
   ],
-  "submitted_task_count": 3,
+  "submitted_task_count": 8,
   "submitted_advertised_native_reward": {
     "asset": "RTC",
-    "amount": 9,
+    "amount": 16,
     "status": "requested/pending only; excluded from verified totals"
   },
   "invalid_or_blocked_submissions": [
     {
       "source": "Scottcjn/rustchain-bounties#254",
       "target": "Scottcjn/beacon-skill#921",
-      "status": "not counted: bounty #254 requires the GitHub issue/comment itself; email fallback does not substitute for that deliverable"
+      "status": "not counted: the paid deliverable must exist on a Scottcjn repository; the prior email-only attempted substitute does not qualify"
     }
   ],
   "verified_total_value_gbp": 0.00,
